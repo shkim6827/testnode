@@ -1,0 +1,8 @@
+<h1>유저 전체보기 화면입니다.</h1>
+<h1><%= users.length %></h1>
+<ul>
+<% for(var i=0; i<users.length; i++) {%>
+   <li><%= users[i].name %><a href ='/modify_user/<%= users[i].id %>'>바꿀래?</a></li>
+
+<% } %>
+</ul>
